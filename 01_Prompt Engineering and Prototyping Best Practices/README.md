@@ -33,7 +33,7 @@ Each assignment will have a few of the following categories of exercises:
 
 ##### 🏗️ Activity #1:
 
-Please evaluate your system on the following questions:
+Please evaluate your system on the following questions: (answers are directly below)
 
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
     - Aspect Tested:
@@ -46,6 +46,53 @@ Please evaluate your system on the following questions:
 5. Rewrite the following paragraph in a professional, formal tone…
     - Aspect Tested:
 
+## 🏗️ Activity #1 Answers:
+
+---
+
+### 1️⃣ Explain the concept of object-oriented programming in simple terms to a complete beginner.
+
+**Aspect Tested:**  
+- Clarity / Brevity  
+- Accuracy  
+- Teaching Value  
+
+---
+
+### 2️⃣ Read the following paragraph and provide a concise summary of the key points.
+
+**Aspect Tested:**  
+- Clarity / Brevity  
+- Accuracy  
+- Comprehension  
+
+---
+
+### 3️⃣ Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
+
+**Aspect Tested:**  
+- Creativity  
+- Tone  
+
+---
+
+### 4️⃣ If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
+
+**Aspect Tested:**  
+- Reasoning / Logic  
+
+---
+
+### 5️⃣ Rewrite the following paragraph in a professional, formal tone.
+
+**Aspect Tested:**  
+- Tone  
+- Professionalism  
+
+---
+
+
+
 This "vibe check" now serves as a baseline, of sorts, to help understand what holes your application has.
 
 ##### 🚧 Advanced Build:
@@ -55,6 +102,13 @@ Please make adjustments to your application that you believe will improve the vi
 > NOTE: You may reach for improving the model, changing the prompt, or any other method.
 
 ### Submitting Your Homework
+## 🚀 AIE7 Assignment 1 Submission
+
+- [Reflection & Results (activities.md)](https://github.com/BQ31X/Revamped-AI-Engineer-Challenge/blob/advanced-build/activities.md)
+- [Loom Video](https://www.loom.com/share/d6e99c269d4245e0a48db286a9cabf1e?sid=2383b87a-3a30-41f2-82de-cb8c7b2dbdaf)
+- [Advanced Build Branch](https://github.com/BQ31X/Revamped-AI-Engineer-Challenge/tree/advanced-build)
+- [Deployed Advanced Build (Vercel)](https://frontend-jade-iota-75.vercel.app)
+
 #### Activity #1 and Discussion Question #1 Only
 Follow these steps to prepare and submit your homework:
 1. Create a branch of your `AIE7` repo to track your changes. Example command: `git checkout -b s01-assignment`
@@ -76,6 +130,15 @@ When submitting your homework provide the following on the form:
 + The GitHub URL to the markdown document you created in your Challenge project's repo.
 + The public Vercel URL to your updated Challenge project.
 
+## 🚀 AIE7 Assignment 1 Submission
+
+- [Reflection & Results (activities.md)](https://github.com/BQ31X/Revamped-AI-Engineer-Challenge/blob/advanced-build/activities.md)
+- [Loom Video](https://www.loom.com/share/d6e99c269d4245e0a48db286a9cabf1e?sid=2383b87a-3a30-41f2-82de-cb8c7b2dbdaf)
+- [Advanced Build Branch](https://github.com/BQ31X/Revamped-AI-Engineer-Challenge/tree/advanced-build)
+- [Deployed Advanced Build (Vercel)](https://frontend-jade-iota-75.vercel.app)
+
+As of 6/28, the app is (finally) working correctly on Vercel at the above URL!
+
 ### A Note on Vibe Checking
 
 "Vibe checking" is an informal term for cursory unstructured and non-comprehensive evaluation of LLM-powered systems. The idea is to loosely evaluate our system to cover significant and crucial functions where failure would be immediately noticeable and severe.
@@ -85,3 +148,7 @@ In essence, it's a first look to ensure your system isn't experiencing catastrop
 ##### 🧑‍🤝‍🧑❓ Discussion Question #1:
 
 What are some limitations of vibe checking as an evaluation tool?
+- It is subjective and depends on individual perceptions.  
+- It may overlook subtle flaws that only appear in rigorous testing.  
+- It is hard to reproduce results consistently across evaluators.  
+- It can miss systematic errors that only emerge with larger data sets.  
