@@ -1,0 +1,147 @@
+[
+  {
+    "eval_sample": {
+      "user_input": "When did the federal student loan COVID-19 forbearance program end?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "The federal student loan COVID-19 forbearance program ended in XX/XX/XXXX. However, payments were not re-amortized on my federal student loans currently serviced by Nelnet until very recently. The new payment amount that is effective starting with the XX/XX/XXXX payment will nearly double my payment from {$180.00} per month to {$360.00} per month. I'm fortunate that my current financial position allows me to be able to handle the increased payment amount, but I am sure there are likely many borrowers who are not in the same position. The re-amortization should have occurred once the forbearance ended to reduce the impact to borrowers."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "The federal student loan COVID-19 forbearance program ended in XX/XX/XXXX.",
+      "rubrics": null
+    },
+    "synthesizer_name": "single_hop_specifc_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "What are the legal implications for Aidvantage if they continue to assign incorrect repayment amounts based on unprocessed IDR applications, and how does this relate to federal privacy laws and consumer protection statutes?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "I submitted my annual Income-Driven Repayment ( IDR ) recertification to Aidvantage on time and in full, using the correct process. My income is approximately $ XXXX/year, which is below 150 % of the federal poverty guideline. Under the SAVE Plan or any valid IDR/IBR plan , this income level qualifies for a $ XXXX monthly payment. \n\nInstead, Aidvantage assigned me a $ XXXX/month paymentan amount that is not legally or mathematically possible based on my income. I contacted them and was placed in a two-month administrative forbearance. After that, they returned with the exact same incorrect payment amount. \n\nWhen I pressed for clarification, Aidvantage responded that my IDR application has not been processed yet, even though they had already issued a bill and claimed it was based on a recalculation. This is a clear contradiction. You can not bill a borrower for an IDR plan amount before processing the application. \n\nAidvantage has not requested any additional documentation from me. There has been no communication asking for clarification or income verification beyond my original submission. \n\nI am requesting : A correction of my repayment amount in accordance with my documented income ; A written explanation of how the erroneous amount was calculated ; A guarantee that no delinquency or negative credit reporting occurs while this dispute is unresolved ; An investigation into why borrowers are being billed despite applications not being processed."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "The context indicates that Aidvantage has assigned a repayment amount that is not legally or mathematically possible based on the borrower's income, despite the application not being processed yet. The borrower has requested a correction, an explanation, and assurances against negative credit reporting. As the responsible entity for managing legal actions related to data breaches and unauthorized account reporting, the Legal Compliance Officer would be concerned that continuing to bill borrowers incorrectly could violate federal privacy laws and consumer protection statutes, potentially leading to legal consequences for Aidvantage.",
+      "rubrics": null
+    },
+    "synthesizer_name": "single_hop_specifc_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "Did my data breach violate FERPA and can I get my student loan debt canceled?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "My personal and financial data was compromised violating FERPA. I request full cancellation of my student loan debt."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "My personal and financial data was compromised violating FERPA. I request full cancellation of my student loan debt.",
+      "rubrics": null
+    },
+    "synthesizer_name": "single_hop_specifc_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "What is the issue with the information provided by Studentaid.gov regarding my loan issuer?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "According to Studentaid.gov, Im to get an email and a letter of notice that my servicer is being changed. studentaid.gov says that my issuer is nelnet. Nelnet says my issuer is somewhere else. With that said, the only reason i would have know would be because i am trying to make a payment. Now im going to incrue extra interest and my i have no idea where my loan is. This is ridiculous and I would really like to know where it is. Nelnet messages told me that as I logged in today XX/XX/year>, but nothing else. \n\nIf i incrue any late payment or interest fees, I will sue. This is absurd."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "According to the context, Studentaid.gov states that the loan issuer is Nelnet, but Nelnet indicates that the issuer is somewhere else. The individual is confused about the location of their loan and has received limited information, only a message upon login without further details. They are concerned about accruing extra interest and late fees and are seeking clarification on the loan's whereabouts.",
+      "rubrics": null
+    },
+    "synthesizer_name": "single_hop_specifc_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "How does the Fair Credit Reporting Act ensure that credit reporting agencies conduct proper reinvestigations of disputed items, and what are the legal obligations under this act regarding the accuracy and correction of credit information?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "I am writing to formally dispute inaccurate information on my credit report. This dispute is submitted under the Fair Credit Reporting Act ( FCRA ), 15 U.S.C. 16811, which requires credit reporting agencies to conduct a reasonable reinvestigation of disputed items.\n\nRecent findings by the Consumer Financial Protection Bureau ( CFPB ) have brought to light significant concerns regarding XXXX  and XXXX XXXX failure to conduct proper investigations. Specifically, in a lawsuit filed against XXXX  and XXXX, the CFPB alleges that the company engaged in sham investigations, violating consumer protection laws by failing to meet its obligations under the FCRA.\n\nAs per 15 U.S.C. 1681i ( a ) ( 1 ) ( A ), XXXX  and XXXX  is required to conduct a thorough and reasonable reinvestigation of disputed items within 30 days. Furthermore, under 15 U.S.C. 1681i ( a ) ( 5 ), any information found to be inaccurate, incomplete, or unverifiable must be promptly deleted or corrected. Failure to adhere to these requirements constitutes a violation of federal law.\n\nConduct a thorough reinvestigation of the following disputed accounts or items : EDFinancial Services through 15 accounts totaling {$35000.00}."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "The Fair Credit Reporting Act (FCRA), specifically under 15 U.S.C. 1681i, requires credit reporting agencies to conduct a reasonable reinvestigation of disputed items within 30 days. If any information is found to be inaccurate, incomplete, or unverifiable, the agencies must promptly delete or correct it. Recent findings by the Consumer Financial Protection Bureau have highlighted concerns about companies engaging in sham investigations, violating these obligations. Failure to adhere to these requirements constitutes a violation of federal law.",
+      "rubrics": null
+    },
+    "synthesizer_name": "single_hop_specifc_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "Did Department of Education get involved with breach of contract and did they have my info in their system?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "<1-hop>\n\nBreach of Contract - All four branches have violated my rights and breach of contract CFPB Credit Bureaus Doge FERPA Because they have violated my rights and there's been a breach of contract, HIPAA Violation, and more. This should be removed off my credit report at once. I have sent a dispute letter to all 3 other agency 's above. This should be discharged, forgiven, and completely removed. \n\nDepartment of Education Nelnet XXXX XXXX XXXX XXXX, XXXX XXXX XXXX XXXX XXXX",
+        "<2-hop>\n\nOn XXXX XXXX XXXX, XXXX XXXX instructed his team of Department of Government Efficiency ( DOGE ) to gain access to multiple internal system within the Department of Education, including financial aid dataset that contains the personal information of millions of students enrolled in the federal student aid program. My information was among that dataset that has been compromised."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "Yes, the Department of Education was involved because there was a breach of contract and violation of rights, including a data breach where personal information of students, including the user's, was compromised when Department of Government Efficiency (DOGE) accessed internal systems containing federal student aid data.",
+      "rubrics": null
+    },
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "How does the illegal access to the Department of Education's system relate to the ongoing illegal student loan reporting and collection practices after the department's abolishment, and what legal violations are involved?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "<1-hop>\n\nOn XXXX XXXX XXXX, XXXX XXXX instructed his team of Department of Government Efficiency ( DOGE ) to gain access to multiple internal system within the Department of Education, including financial aid dataset that contains the personal information of millions of students enrolled in the federal student aid program. My information was among that dataset that has been compromised.",
+        "<2-hop>\n\nIllegal Student Loan Reporting & Collections Following Department of Education Abolishment I am filing a formal complaint against [ Loan Servicer Name ], XXXX XXXX XXXX XXXX for continued reporting and collection of student loan debt that is now legally void following the executive order to abolish the U.S. Department of Education.\n\n1. Illegal Credit Reporting The credit bureaus continue to report student loans that are now unverified and legally questionable due to the dissolution of the Department of Education.\n\n2. Failure to Verify Legitimacy of Debt The loan servicer has failed to provide evidence of legal ownership, collection rights, or servicing obligations in light of the agencys abolishment.\n\n3. Unfair and Deceptive Practices The continued collection of these debts constitutes a violation of my rights under the FCRA ( 15 U.S.C. 1681 ) and FDCPA ( 15 U.S.C. 1692 ).\n\nI demand an immediate investigation, deletion of these accounts from my credit report, and cessation of any collection efforts by my loan servicer. If this matter is not resolved promptly, I will pursue further legal action.\n\nSincerely,"
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "The illegal access to the Department of Education's internal systems, which contained personal information of students, is connected to the ongoing illegal student loan reporting and collection practices following the department's abolishment. Despite the department's dissolution, loan servicers continue to report and collect on student loans that are now legally void, failing to verify the legitimacy of the debts and engaging in unfair and deceptive practices. These actions violate laws such as the FCRA and FDCPA, and the individual is demanding an investigation, deletion of the accounts from their credit report, and cessation of collection efforts.",
+      "rubrics": null
+    },
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "Based on the issues raised with NelNet's handling of auto-debit payments and the legal dispute over student loan account reporting, how does the improper management of auto-debit records relate to the violations of federal privacy statutes and consumer protection laws associated with NelNet's reporting of student loan tradelines?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "<1-hop>\n\nI keep setting up auto-debit with NelNet, get confirmation, and then the payments aren't processing. In XXXX of XXXX, XXXX of XXXX, and XX/XX/XXXX I tried to set up auto debit for my loan. I go back in and the website shows I didn't make a payment. I have received multiple confirmations that I have been set up for auto-debit and then NelNet deletes the record. I have a paper letter confirming auto-payment enrollment from XX/XX/XXXX, but the website keeps deleting my payment data. Since auto-payment receives a small discount on the loan payment, I suspect the company of skimming the dollar and change that my payment amount should be reduced by per month. Please assist me in correcting this behavior, so that other borrowers are not informed of an auto-debit only to have these bad actors play games with our loan accounts.",
+        "<2-hop>\n\nThis is a formal legal demand for immediate investigation and permanent deletion of all student loan accounts reported under the tradeline \" DEPT OF XXXX, '' which is NELNET, XXXX my credit report. These accounts include all loanssubsidized, unsubsidized, and Parent PLUSand their continued presence on my report constitutes an egregious violation of federal privacy statutes and consumer protection law. \n\nIt has come to light through extensive reporting and insider disclosures that entities affiliated with or under the operational influence of XXXX XXXX, specifically DOGE-related ventures, gained illegal and unrestricted access to sensitive borrower data stored within Department of Education systems. This information includes the entirety of my student loan file, which is protected under longstanding federal privacy law and explicit contractual obligations governing the use, access, and safeguarding of this data. \n\nThe unauthorized access to my personal and financial records constitutes a direct violation of the Privacy Act of 1974, the Family Educational Rights and Privacy Act ( FERPA ), the Higher Education Act, and the Federal Trade Commission Act, among others. In addition, the Department of Education, by failing to prevent such a breach, has defaulted on its contractual duties, materially violating the terms of agreement I entered into as a borrower. As a matter of contract law, this breach voids the contract in its entirety, rendering all outstanding balances unenforceable. The contract is no longer valid and therefore all associated reporting must cease immediately. \n\nFurthermore, under the Fair Credit Reporting Act, specifically 15 U.S. Code 1681e ( b ), consumer reporting agencies are required to report only information that is complete and verifiable. The data being reported by your bureau in relation to the \" DEPT OF EDUCATION/NELN '' tradeline is now under legal dispute due to illegality of origin and breach of contract. Continued furnishing or reinsertion of this information without legal justification or lawful verification constitutes willful noncompliance with federal law, making your agency liable under 15 U.S. Code 1681n and 1681o for civil damages. \n\nNelnet, the loan servicer responsible for these accounts, is equally liable for their role in the breach. As the originating furnisher of this erroneous and contractually voided data, Nelnet must immediately cease all furnishing of student loan information related to my name and render all associated accounts as deleted and paid in full, or otherwise indicate closure in good standing with XXXX balance due. It is unlawful and unconscionable to continue enforcing repayment obligations upon a client whose contractual terms have been breached by the government and its appointed agents. As such, I owe no further amount under any condition, and the record of these accounts must reflect that accordingly. \n\nAny delay or attempt to obstruct this dispute under the guise of identity verification is hereby nullified. My government-issued identification, including the front and back of my drivers license, my social security verification, and XXXX XXXX statement showing my current address, are all included in the PDF file named XXXX XXXX XXXX' which is already uploaded to the CFPB complaint system. This document satisfies all verification standards imposed by any bureau or furnisher. Therefore, I demand that you acknowledge receipt of this dispute and cease all reporting activity related to the tradeline in question until the matter is resolved. I will pursue legal recourse in small claims court and escalate to federal jurisdiction should you ignore or inadequately address this matter. My legal team is fully prepared to pursue compensatory and punitive damages for emotional, financial, and reputational harm. \n\nYou have been formally notified."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "The improper management of auto-debit records by NelNet, including the deletion of confirmed auto-payment enrollments and suspected skimming, highlights significant issues with data accuracy and integrity. These issues are compounded by the legal dispute over the reporting of student loan accounts under the tradeline \"DEPT OF XXXX,\" which involves unauthorized access to sensitive borrower data, violations of federal privacy statutes such as the Privacy Act of 1974 and FERPA, and breaches of contractual obligations. The mishandling of payment data and the illegal reporting of loan information both reflect systemic failures in data security and compliance, emphasizing the need for strict adherence to federal laws to protect consumer rights and ensure accurate credit reporting.",
+      "rubrics": null
+    },
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "How does the continued reporting and collection of student loans by the loan servicer violate the FDCPA, especially considering the account transfer due to deception and the abolishment of the Department of Education?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "<1-hop>\n\nThis account was transferred to Nelnet ( NNI ) from XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX ; who had engaged in acts of deception and made numerous errors on the account, as well as having broken numerous consumer protection laws, including the FDCPA, FCRA, TCPA, Indiana Senior Consumer Protection Act, Indiana Deceptive Consumers Sales Act. This occurred in XXXX and XXXX. We then sent letters to Nelnet by Certified Mail ( CM ) several times in XXXX and XXXX, detailing the serious misconduct by XXXX. \n\nDespite signing for the CM and acknowledging receipt of the written complaint and violations of law, XXXX never responded to the CM, nor provided any answers to the questions raised in the CM. XXXX never corrected any of the errors- some of which may have been not just errors but deliberate acts of covering-up acts of deception. XXXX then began a series of doing many of the same violations of law. \n\nXXXX seems to have a Compliance Problem.",
+        "<2-hop>\n\nIllegal Student Loan Reporting & Collections Following Department of Education Abolishment I am filing a formal complaint against [ Loan Servicer Name ], XXXX XXXX XXXX XXXX for continued reporting and collection of student loan debt that is now legally void following the executive order to abolish the U.S. Department of Education.\n\n1. Illegal Credit Reporting The credit bureaus continue to report student loans that are now unverified and legally questionable due to the dissolution of the Department of Education.\n\n2. Failure to Verify Legitimacy of Debt The loan servicer has failed to provide evidence of legal ownership, collection rights, or servicing obligations in light of the agencys abolishment.\n\n3. Unfair and Deceptive Practices The continued collection of these debts constitutes a violation of my rights under the FCRA ( 15 U.S.C. 1681 ) and FDCPA ( 15 U.S.C. 1692 ).\n\nI demand an immediate investigation, deletion of these accounts from my credit report, and cessation of any collection efforts by my loan servicer. If this matter is not resolved promptly, I will pursue further legal action.\n\nSincerely,"
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "The continued reporting and collection of student loans by the loan servicer violate the FDCPA because, following the abolishment of the Department of Education, the loans are now legally void and unverified. Despite this, the loan servicer has failed to provide evidence of legal ownership or servicing rights, and has engaged in unfair and deceptive practices by continuing collection efforts. This misconduct, combined with the account transfer due to prior deception and errors, constitutes violations of the FDCPA, as it involves illegal debt collection practices and failure to verify the legitimacy of the debt.",
+      "rubrics": null
+    },
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "How does the violation of federal privacy laws by the Department of Education and Nelnet relate to the breach of contract and the removal of the tradeline from the credit report?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "<1-hop>\n\nThis is a formal legal demand for immediate investigation and permanent deletion of all student loan accounts reported under the tradeline \" DEPT OF XXXX, '' which is NELNET, XXXX my credit report. These accounts include all loanssubsidized, unsubsidized, and Parent PLUSand their continued presence on my report constitutes an egregious violation of federal privacy statutes and consumer protection law. \n\nIt has come to light through extensive reporting and insider disclosures that entities affiliated with or under the operational influence of XXXX XXXX, specifically DOGE-related ventures, gained illegal and unrestricted access to sensitive borrower data stored within Department of Education systems. This information includes the entirety of my student loan file, which is protected under longstanding federal privacy law and explicit contractual obligations governing the use, access, and safeguarding of this data. \n\nThe unauthorized access to my personal and financial records constitutes a direct violation of the Privacy Act of 1974, the Family Educational Rights and Privacy Act ( FERPA ), the Higher Education Act, and the Federal Trade Commission Act, among others. In addition, the Department of Education, by failing to prevent such a breach, has defaulted on its contractual duties, materially violating the terms of agreement I entered into as a borrower. As a matter of contract law, this breach voids the contract in its entirety, rendering all outstanding balances unenforceable. The contract is no longer valid and therefore all associated reporting must cease immediately. \n\nFurthermore, under the Fair Credit Reporting Act, specifically 15 U.S. Code 1681e ( b ), consumer reporting agencies are required to report only information that is complete and verifiable. The data being reported by your bureau in relation to the \" DEPT OF EDUCATION/NELN '' tradeline is now under legal dispute due to illegality of origin and breach of contract. Continued furnishing or reinsertion of this information without legal justification or lawful verification constitutes willful noncompliance with federal law, making your agency liable under 15 U.S. Code 1681n and 1681o for civil damages. \n\nNelnet, the loan servicer responsible for these accounts, is equally liable for their role in the breach. As the originating furnisher of this erroneous and contractually voided data, Nelnet must immediately cease all furnishing of student loan information related to my name and render all associated accounts as deleted and paid in full, or otherwise indicate closure in good standing with XXXX balance due. It is unlawful and unconscionable to continue enforcing repayment obligations upon a client whose contractual terms have been breached by the government and its appointed agents. As such, I owe no further amount under any condition, and the record of these accounts must reflect that accordingly. \n\nAny delay or attempt to obstruct this dispute under the guise of identity verification is hereby nullified. My government-issued identification, including the front and back of my drivers license, my social security verification, and XXXX XXXX statement showing my current address, are all included in the PDF file named XXXX XXXX XXXX' which is already uploaded to the CFPB complaint system. This document satisfies all verification standards imposed by any bureau or furnisher. Therefore, I demand that you acknowledge receipt of this dispute and cease all reporting activity related to the tradeline in question until the matter is resolved. I will pursue legal recourse in small claims court and escalate to federal jurisdiction should you ignore or inadequately address this matter. My legal team is fully prepared to pursue compensatory and punitive damages for emotional, financial, and reputational harm. \n\nYou have been formally notified.",
+        "<2-hop>\n\nBreach of Contract - All four branches have violated my rights and breach of contract CFPB Credit Bureaus Doge FERPA Because they have violated my rights and there's been a breach of contract, HIPAA Violation, and more. This should be removed off my credit report at once. I have sent a dispute letter to all 3 other agency 's above. This should be discharged, forgiven, and completely removed. \n\nDepartment of Education Nelnet XXXX XXXX XXXX XXXX, XXXX XXXX XXXX XXXX XXXX"
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "The violation of federal privacy laws by the Department of Education and Nelnet, including unauthorized access and breach of data protected under laws like FERPA and the Privacy Act of 1974, constitutes a breach of contract and legal obligations. This breach has led to the reporting of invalid and legally disputed student loan information, which the borrower demands be permanently removed from the credit report. The breach of contract and privacy violations together justify the request for the tradeline's removal, as continued reporting is unlawful and violates the contractual and legal protections owed to the borrower.",
+      "rubrics": null
+    },
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  }
+]
