@@ -1,0 +1,17 @@
+BM25 RESULTS:
+{'context_recall': 0.8667, 'faithfulness': 0.8118, 'factual_correctness': 0.5210, 'answer_relevancy': 0.7582, 'context_entity_recall': 0.4540, 'noise_sensitivity_relevant': 0.2374}
+
+NAIVE RESULTS:
+{'context_recall': 0.8417, 'faithfulness': 0.7532, 'factual_correctness': 0.5370, 'answer_relevancy': 0.9424, 'context_entity_recall': 0.4445, 'noise_sensitivity_relevant': 0.2966}
+
+MULTI_QUERY RESULTS:
+{'context_recall': 0.8667, 'faithfulness': 0.8165, 'factual_correctness': 0.4462, 'answer_relevancy': 0.7477, 'context_entity_recall': 0.4583, 'noise_sensitivity_relevant': 0.3406}
+
+PARENT_DOC RESULTS:
+{'context_recall': 0.8083, 'faithfulness': 0.8284, 'factual_correctness': 0.5050, 'answer_relevancy': 0.7498, 'context_entity_recall': 0.3631, 'noise_sensitivity_relevant': 0.2905}
+
+ENSEMBLE RESULTS:
+{'context_recall': 0.9417, 'faithfulness': 0.8553, 'factual_correctness': 0.5030, 'answer_relevancy': 0.9399, 'context_entity_recall': 0.4396, 'noise_sensitivity_relevant': 0.2475}
+
+CONTEXTUAL_COMPRESSION RESULTS:
+{'context_recall': 0.7583, 'faithfulness': 0.6673, 'factual_correctness': 0.5311, 'answer_relevancy': 0.8500, 'context_entity_recall': 0.5427, 'noise_sensitivity_relevant': 0.2390}
