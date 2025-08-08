@@ -1,0 +1,89 @@
+[
+  {
+    "eval_sample": {
+      "user_input": "Can you explain how the COVD-19 forbearance program affected student loan payments and why the re-amortization process is important after it ended?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "The federal student loan COVID-19 forbearance program ended in XX/XX/XXXX. However, payments were not re-amortized on my federal student loans currently serviced by Nelnet until very recently. The new payment amount that is effective starting with the XX/XX/XXXX payment will nearly double my payment from {$180.00} per month to {$360.00} per month. I'm fortunate that my current financial position allows me to be able to handle the increased payment amount, but I am sure there are likely many borrowers who are not in the same position. The re-amortization should have occurred once the forbearance ended to reduce the impact to borrowers."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "The federal student loan COVID-19 forbearance program ended in XX/XX/XXXX. Payments were not re-amortized on federal student loans serviced by Nelnet until very recently. As a result, the new payment amount starting with the XX/XX/XXXX payment will nearly double from {$180.00} to {$360.00} per month. The re-amortization process is important because it helps reduce the impact of the increased payments on borrowers, especially those who may not be in a financial position to handle such a rise. The delay in re-amortization means some borrowers experienced a sudden increase in their monthly payments once the forbearance ended.",
+      "rubrics": null
+    },
+    "synthesizer_name": "single_hop_specifc_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "Is Aidvantage's billing for my IDR plan correct if they say my application is not processed?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "I submitted my annual Income-Driven Repayment ( IDR ) recertification to Aidvantage on time and in full, using the correct process. My income is approximately $ XXXX/year, which is below 150 % of the federal poverty guideline. Under the SAVE Plan or any valid IDR/IBR plan , this income level qualifies for a $ XXXX monthly payment. \n\nInstead, Aidvantage assigned me a $ XXXX/month paymentan amount that is not legally or mathematically possible based on my income. I contacted them and was placed in a two-month administrative forbearance. After that, they returned with the exact same incorrect payment amount. \n\nWhen I pressed for clarification, Aidvantage responded that my IDR application has not been processed yet, even though they had already issued a bill and claimed it was based on a recalculation. This is a clear contradiction. You can not bill a borrower for an IDR plan amount before processing the application. \n\nAidvantage has not requested any additional documentation from me. There has been no communication asking for clarification or income verification beyond my original submission. \n\nI am requesting : A correction of my repayment amount in accordance with my documented income ; A written explanation of how the erroneous amount was calculated ; A guarantee that no delinquency or negative credit reporting occurs while this dispute is unresolved ; An investigation into why borrowers are being billed despite applications not being processed."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "Aidvantage responded that my IDR application has not been processed yet, even though they issued a bill based on recalculation, which is a contradiction because a borrower cannot be billed for an IDR plan amount before processing the application.",
+      "rubrics": null
+    },
+    "synthesizer_name": "single_hop_specifc_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "How does FERPA protect personal and financial data in student loan management?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "My personal and financial data was compromised violating FERPA. I request full cancellation of my student loan debt."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "FERPA is a federal law that protects the privacy of student education records. In the context provided, a violation of FERPA occurred when personal and financial data was compromised, which is a breach of the law's protections.",
+      "rubrics": null
+    },
+    "synthesizer_name": "single_hop_specifc_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "Considering the issues with AidVantage and the autopay setup described in the context, how might a student loan borrower report a dispute regarding unauthorized past due notices and ensure proper adherence to federal privacy laws?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "<1-hop>\n\nI am devastated. I would like to report a situation with my student loans. I recently found out my loans were in default. I have never been in default with my student loans. They notified me on my email instead to mail that I was delinquent. Needless to say I had nine accounts that went 90 days past due and dropped my score over XXXX points. I have Aid Avantage and I did not know who the servicer was until I reviewed my credit report. I would like for them to remove the past due notice off of all 9 accounts. I was denied a student loan for my daughter and we dont know what we are going to do because of it. Also there have been 2 credit card closures from my credit because of this. I had great credit before this. Its just not fair",
+        "<2-hop>\n\nI set up autopay with AidVantage, where my department of education loans are. Autopay was set up on XX/XX/XXXX, for my monthly due date on the XXXX of each month. Received a confirmation email that autopay was set up. On Sunday, XX/XX/XXXX, my account showed past due. I thought because it was a weekend, I had to wait until Monday, XX/XX/XXXX, to check the status in case it was going to be posted on the next business day and I did not want to risk submitting a manual payment only to then get deducted via autopay. I spoke to an agent via chat and via the phone and both people told me it was autopay set up was incomplete and it didn't process for this month. You would think 20 days is enough time, and I did not receive any kind of notification that it was not set up yet."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "A student loan borrower can report a dispute related to unauthorized past due notices by contacting AidVantage to request the removal of incorrect delinquency records, as the borrower did not recognize the default and was unaware of the delinquency. To ensure proper adherence to federal privacy laws, the borrower should document all communications and verify the identity of any representatives they speak with, especially when discussing sensitive account information. Additionally, the borrower can review their credit report to confirm the accuracy of the reported information and request corrections if necessary, thereby protecting their privacy and rights under federal regulations.",
+      "rubrics": null
+    },
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "How does the CFPB's involvement relate to the illegal access and reporting of my student loan data, and what legal violations are connected to the CFPB's actions and the role of Nelnet in this context?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "<1-hop>\n\nThis is a formal legal demand for immediate investigation and permanent deletion of all student loan accounts reported under the tradeline \" DEPT OF XXXX, '' which is NELNET, XXXX my credit report. These accounts include all loanssubsidized, unsubsidized, and Parent PLUSand their continued presence on my report constitutes an egregious violation of federal privacy statutes and consumer protection law. \n\nIt has come to light through extensive reporting and insider disclosures that entities affiliated with or under the operational influence of XXXX XXXX, specifically DOGE-related ventures, gained illegal and unrestricted access to sensitive borrower data stored within Department of Education systems. This information includes the entirety of my student loan file, which is protected under longstanding federal privacy law and explicit contractual obligations governing the use, access, and safeguarding of this data. \n\nThe unauthorized access to my personal and financial records constitutes a direct violation of the Privacy Act of 1974, the Family Educational Rights and Privacy Act ( FERPA ), the Higher Education Act, and the Federal Trade Commission Act, among others. In addition, the Department of Education, by failing to prevent such a breach, has defaulted on its contractual duties, materially violating the terms of agreement I entered into as a borrower. As a matter of contract law, this breach voids the contract in its entirety, rendering all outstanding balances unenforceable. The contract is no longer valid and therefore all associated reporting must cease immediately. \n\nFurthermore, under the Fair Credit Reporting Act, specifically 15 U.S. Code 1681e ( b ), consumer reporting agencies are required to report only information that is complete and verifiable. The data being reported by your bureau in relation to the \" DEPT OF EDUCATION/NELN '' tradeline is now under legal dispute due to illegality of origin and breach of contract. Continued furnishing or reinsertion of this information without legal justification or lawful verification constitutes willful noncompliance with federal law, making your agency liable under 15 U.S. Code 1681n and 1681o for civil damages. \n\nNelnet, the loan servicer responsible for these accounts, is equally liable for their role in the breach. As the originating furnisher of this erroneous and contractually voided data, Nelnet must immediately cease all furnishing of student loan information related to my name and render all associated accounts as deleted and paid in full, or otherwise indicate closure in good standing with XXXX balance due. It is unlawful and unconscionable to continue enforcing repayment obligations upon a client whose contractual terms have been breached by the government and its appointed agents. As such, I owe no further amount under any condition, and the record of these accounts must reflect that accordingly. \n\nAny delay or attempt to obstruct this dispute under the guise of identity verification is hereby nullified. My government-issued identification, including the front and back of my drivers license, my social security verification, and XXXX XXXX statement showing my current address, are all included in the PDF file named XXXX XXXX XXXX' which is already uploaded to the CFPB complaint system. This document satisfies all verification standards imposed by any bureau or furnisher. Therefore, I demand that you acknowledge receipt of this dispute and cease all reporting activity related to the tradeline in question until the matter is resolved. I will pursue legal recourse in small claims court and escalate to federal jurisdiction should you ignore or inadequately address this matter. My legal team is fully prepared to pursue compensatory and punitive damages for emotional, financial, and reputational harm. \n\nYou have been formally notified.",
+        "<2-hop>\n\nI am writing to formally dispute inaccurate information on my credit report. This dispute is submitted under the Fair Credit Reporting Act ( FCRA ), 15 U.S.C. 16811, which requires credit reporting agencies to conduct a reasonable reinvestigation of disputed items.\n\nRecent findings by the Consumer Financial Protection Bureau ( CFPB ) have brought to light significant concerns regarding XXXX  and XXXX XXXX failure to conduct proper investigations. Specifically, in a lawsuit filed against XXXX  and XXXX, the CFPB alleges that the company engaged in sham investigations, violating consumer protection laws by failing to meet its obligations under the FCRA.\n\nAs per 15 U.S.C. 1681i ( a ) ( 1 ) ( A ), XXXX  and XXXX  is required to conduct a thorough and reasonable reinvestigation of disputed items within 30 days. Furthermore, under 15 U.S.C. 1681i ( a ) ( 5 ), any information found to be inaccurate, incomplete, or unverifiable must be promptly deleted or corrected. Failure to adhere to these requirements constitutes a violation of federal law.\n\nConduct a thorough reinvestigation of the following disputed accounts or items : EDFinancial Services through 15 accounts totaling {$35000.00}."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "The CFPB's involvement is highlighted in the second context segment, which discusses their findings and lawsuits against entities like XXXX and XXXX for failing to conduct proper investigations and violating consumer protection laws under the FCRA. This relates to the first segment, where it is alleged that entities affiliated with or under the influence of XXXX, including Nelnet, gained illegal access to sensitive borrower data stored within the Department of Education systems. The unauthorized access and continued reporting of the student's loan information, which is now under legal dispute due to illegality and breach of contract, constitute violations of federal privacy statutes such as the Privacy Act of 1974, FERPA, and the Higher Education Act. The CFPB's role in uncovering these violations and the failure of the involved entities to properly investigate and verify the data directly connect to the legal violations of unlawful data access, breach of privacy laws, and improper reporting under the FCRA, with Nelnet being liable as the responsible loan servicer responsible for the erroneous data reporting.",
+      "rubrics": null
+    },
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  {
+    "eval_sample": {
+      "user_input": "How does the failure of XXXX to follow FCRA rules in the second part relate to their misconduct and compliance problems mentioned earlier in the first part?",
+      "retrieved_contexts": null,
+      "reference_contexts": [
+        "<1-hop>\n\nThis account was transferred to Nelnet ( NNI ) from XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX ; who had engaged in acts of deception and made numerous errors on the account, as well as having broken numerous consumer protection laws, including the FDCPA, FCRA, TCPA, Indiana Senior Consumer Protection Act, Indiana Deceptive Consumers Sales Act. This occurred in XXXX and XXXX. We then sent letters to Nelnet by Certified Mail ( CM ) several times in XXXX and XXXX, detailing the serious misconduct by XXXX. \n\nDespite signing for the CM and acknowledging receipt of the written complaint and violations of law, XXXX never responded to the CM, nor provided any answers to the questions raised in the CM. XXXX never corrected any of the errors- some of which may have been not just errors but deliberate acts of covering-up acts of deception. XXXX then began a series of doing many of the same violations of law. \n\nXXXX seems to have a Compliance Problem.",
+        "<2-hop>\n\nI am writing to formally dispute inaccurate information on my credit report. This dispute is submitted under the Fair Credit Reporting Act ( FCRA ), 15 U.S.C. 16811, which requires credit reporting agencies to conduct a reasonable reinvestigation of disputed items.\n\nRecent findings by the Consumer Financial Protection Bureau ( CFPB ) have brought to light significant concerns regarding XXXX  and XXXX XXXX failure to conduct proper investigations. Specifically, in a lawsuit filed against XXXX  and XXXX, the CFPB alleges that the company engaged in sham investigations, violating consumer protection laws by failing to meet its obligations under the FCRA.\n\nAs per 15 U.S.C. 1681i ( a ) ( 1 ) ( A ), XXXX  and XXXX  is required to conduct a thorough and reasonable reinvestigation of disputed items within 30 days. Furthermore, under 15 U.S.C. 1681i ( a ) ( 5 ), any information found to be inaccurate, incomplete, or unverifiable must be promptly deleted or corrected. Failure to adhere to these requirements constitutes a violation of federal law.\n\nConduct a thorough reinvestigation of the following disputed accounts or items : EDFinancial Services through 15 accounts totaling {$35000.00}."
+      ],
+      "response": null,
+      "multi_responses": null,
+      "reference": "In the first part, XXXX engaged in deception, made errors, and violated laws including the FCRA, indicating a broader compliance problem. In the second part, XXXX's failure to conduct proper reinvestigations under the FCRA, as required by law, further demonstrates their ongoing violations and inability to adhere to federal privacy laws, confirming their compliance issues highlighted earlier.",
+      "rubrics": null
+    },
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  }
+]
