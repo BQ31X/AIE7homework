@@ -1,2 +1,18 @@
 .DS_Store
 .env
+# Python bytecode
+**/__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# LangGraph local API cache
+14_LangGraph_Platform/.langgraph_api/
+
+# macOS cruft
+.DS_Store
+
+# (Optional) local virtual envs
+.venv/
+venv/
