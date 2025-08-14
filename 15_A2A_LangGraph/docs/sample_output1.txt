@@ -1,0 +1,95 @@
+🔗 Simple Agent Client (A2A)
+Type your query below. Type 'exit' or 'quit' to quit.
+
+🧠 You: what are some of the latest developments in AI?
+INFO:httpx:HTTP Request: POST http://localhost:10000/ "HTTP/1.1 200 OK"
+🤖 Agent Response:
+--------------------------------------------------
+Some of the latest developments in AI in 2024 include:
+
+1. Google's release of Gemini 2.0, a powerful AI model designed for the "agentic era," integrated into various products. They also advanced generative AI with updates to Imagen, Veo, and MusicFX, and made breakthroughs in robotics, hardware, quantum computing, and chip design.
+
+2. Meta released updates to its Llama AI model that are faster and smaller, enabling sophisticated AI features on devices as small as smartphones. Nvidia released the Nemotron-Mini-4B Instruct small language model with reduced VRAM usage.
+
+3. AI breakthroughs in science, such as AlphaFold 2 contributing to new protein creation, which could lead to advances in medicine, vaccines, and material sciences.
+
+4. Google's AlphaGeometry AI system solved complex geometry problems at a level close to a human Olympiad gold-medalist, and combined with AlphaProof, solved 83% of historical International problems.
+
+5. Mapping of the human brain at unprecedented detail using AI-generated annotations, accelerating neuroscience research.
+
+6. Development of FireSat, an AI model with a satellite constellation to detect and track wildfires quickly, aiding faster response.
+
+7. Advances in personalized education AI models like LearnLM, improving engagement and adaptation to learners.
+
+8. Efforts to improve the trustworthiness of AI-generated content by grounding large language models in source documents and structured data to reduce hallucinations.
+
+These developments highlight a year of extraordinary progress in AI across multiple domains including science, education, environment, and technology.
+--------------------------------------------------
+
+🧠 You: what else can you do?
+INFO:httpx:HTTP Request: POST http://localhost:10000/ "HTTP/1.1 200 OK"
+🤖 Agent Response:
+--------------------------------------------------
+I can assist with a wide range of tasks including answering questions, providing explanations, helping with writing and editing, generating creative content, offering recommendations, performing calculations, summarizing information, translating languages, and more. If you have a specific task or question in mind, feel free to ask!
+--------------------------------------------------
+
+🧠 You: what is the weather like today in Boston?
+INFO:httpx:HTTP Request: POST http://localhost:10000/ "HTTP/1.1 200 OK"
+🤖 Agent Response:
+--------------------------------------------------
+Today's weather in Boston is partly sunny and humid with a thunderstorm expected in the afternoon. The high temperature will be around 87°F, and tonight there will be a thunderstorm early in the evening with a low of 70°F. There is a 60% chance of rain with scattered thunderstorms expected later in the day.
+--------------------------------------------------
+
+🧠 You: what was the last question that I asked you?
+INFO:httpx:HTTP Request: POST http://localhost:10000/ "HTTP/1.1 200 OK"
+🤖 Agent Response:
+--------------------------------------------------
+The last question you asked me was: "what was the last question that I asked you?"
+--------------------------------------------------
+
+🧠 You: fjalksdfj 2309r8ru fjsd?
+INFO:httpx:HTTP Request: POST http://localhost:10000/ "HTTP/1.1 200 OK"
+🤖 Raw Response:
+{
+  "id": "49cbb18c-48e7-4c6b-b1d2-1b691ab533d5",
+  "jsonrpc": "2.0",
+  "result": {
+    "contextId": "11ea90e3-214b-4384-ab92-32f6d2e6a48c",
+    "history": [
+      {
+        "contextId": "11ea90e3-214b-4384-ab92-32f6d2e6a48c",
+        "kind": "message",
+        "messageId": "e78e8ad3d5e0438e95cb7e338778d145",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "fjalksdfj 2309r8ru fjsd?"
+          }
+        ],
+        "role": "user",
+        "taskId": "0ea92f07-f732-4e4d-a186-a8d7a03f0fe6"
+      }
+    ],
+    "id": "0ea92f07-f732-4e4d-a186-a8d7a03f0fe6",
+    "kind": "task",
+    "status": {
+      "message": {
+        "contextId": "11ea90e3-214b-4384-ab92-32f6d2e6a48c",
+        "kind": "message",
+        "messageId": "dd0a660a-839e-4aec-b5a3-3ed1a7f6488a",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "Your input appears to be random or unclear. Please provide a clear question or request so I can assist you."
+          }
+        ],
+        "role": "agent",
+        "taskId": "0ea92f07-f732-4e4d-a186-a8d7a03f0fe6"
+      },
+      "state": "input-required",
+      "timestamp": "2025-08-14T18:58:47.528211+00:00"
+    }
+  }
+}
+
+🧠 You: 

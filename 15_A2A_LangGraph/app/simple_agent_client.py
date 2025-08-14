@@ -108,13 +108,13 @@ def _pretty_print_response(response_json: dict[str, Any]) -> None:
         print(json.dumps(response_json, indent=2))
 
 
-async def _amain(base_url: str, query: str) -> None:
+async def _amain(base_url: str, query: str | None = None) -> None:
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger(__name__)
 
     logger.info(f"Resolving Agent Card at {base_url}{AGENT_CARD_WELL_KNOWN_PATH}")
-    # Build client and graph
-    # Note: Keep one AsyncClient context for the lifetime of the call
+    # Build client and graph once
+    # Note: Keep one AsyncClient context for the lifetime of the session
     async with httpx.AsyncClient(timeout=httpx.Timeout(60.0)) as httpx_client:
         resolver = A2ACardResolver(httpx_client=httpx_client, base_url=base_url)
         card: AgentCard = await resolver.get_agent_card(
@@ -123,14 +123,36 @@ async def _amain(base_url: str, query: str) -> None:
         client = A2AClient(httpx_client=httpx_client, agent_card=card)
         app = _build_graph(client)
 
-        # INVOCATION: Uses graph.ainvoke() for LangGraph integration
-        # (vs test_client.py's direct function calls)
-        result: ClientState = await app.ainvoke({"query": query})
-        
-        # NOTE: Only prints for CLI demo; in workflows, return result for downstream processing
-        _pretty_print_response(result.get("response_json", {}))
-        #replace this with a more useful print
-        #print(result.get("response_json"))
+        # If query provided via CLI, run once and exit
+        if query:
+            result: ClientState = await app.ainvoke({"query": query})
+            _pretty_print_response(result.get("response_json", {}))
+            return
+
+        # Interactive loop mode
+        print("🔗 Simple Agent Client (A2A)")
+        print("Type your query below. Type 'exit' or 'quit' to quit.\n")
+
+        while True:
+            try:
+                user_input = input("🧠 You: ").strip()
+                if user_input.lower() in ["exit", "quit", ""]:
+                    print("👋 Goodbye!")
+                    break
+
+                # INVOCATION: Uses graph.ainvoke() for LangGraph integration
+                result: ClientState = await app.ainvoke({"query": user_input})
+                
+                # Pretty print the response
+                _pretty_print_response(result.get("response_json", {}))
+                print()  # Extra newline for readability
+
+            except KeyboardInterrupt:
+                print("\n👋 Goodbye!")
+                break
+            except Exception as e:
+                print(f"❌ Error: {e}")
+                print()
 
 
 def main() -> None:
@@ -152,8 +174,8 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    query = args.query or input("Enter your query: ").strip()
-    asyncio.run(_amain(args.base_url, query))
+    # If no query provided, run in interactive mode
+    asyncio.run(_amain(args.base_url, args.query))
 
 
 if __name__ == "__main__":
