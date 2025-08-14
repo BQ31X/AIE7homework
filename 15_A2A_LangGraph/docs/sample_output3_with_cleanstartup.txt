@@ -1,0 +1,45 @@
+amily@Family-iMac-2023 15_A2A_LangGraph % uv run python app/simple_agent_client.py                                              
+🔗 Connecting to Agent Node...
+✅ Connected to: General Purpose Agent
+📍 Server: http://localhost:10000
+
+============================================================
+🤖 Simple Agent Client (A2A)
+============================================================
+💡 Tips:
+   • Type your questions normally
+   • Follow-up clarifications continue the same task
+   • New questions after completed answers start fresh
+   • Type 'exit' or 'quit' to quit
+============================================================
+
+🧠 You: what's the difference between an orange?
+🤖 Agent Response:
+--------------------------------------------------
+The question "What's the difference between an orange?" seems incomplete or unclear. If you meant to ask about the difference between an orange and something else (like another fruit), please specify the other item for comparison. Alternatively, if you're asking about different types of oranges, I can provide information on that as well.
+--------------------------------------------------
+
+🧠 You: versus an apple
+🤖 Agent Response (needs clarification):
+--------------------------------------------------
+Could you please provide more context or specify what you would like to compare with an apple? For example, are you asking about nutritional content, taste, or something else?
+--------------------------------------------------
+
+🧠 You: color
+🤖 Agent Response (needs clarification):
+--------------------------------------------------
+Could you please clarify what you mean by 'versus an apple' in terms of color? Are you asking to compare the color of an apple to another object or fruit? Please provide more details so I can assist you better.
+--------------------------------------------------
+
+🧠 You: banana
+🤖 Agent Response:
+--------------------------------------------------
+Comparing the colors of an apple and a banana:
+
+- Apples can be red, green, yellow, or a combination of these colors depending on the variety.
+- Bananas are typically yellow when ripe, with green when unripe and brown spots as they over-ripen.
+
+So, while apples have a wider range of colors, bananas are most commonly yellow when ready to eat.
+--------------------------------------------------
+
+🧠 You: 
