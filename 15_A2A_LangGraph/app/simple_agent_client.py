@@ -80,6 +80,34 @@ def _build_graph(client: A2AClient):
     return graph.compile()
 
 
+def _pretty_print_response(response_json: dict[str, Any]) -> None:
+    """Extract and pretty print just the agent's response text."""
+    try:
+        # Navigate the JSON structure: result -> artifacts -> parts -> text
+        artifacts = response_json.get("result", {}).get("artifacts", [])
+        if artifacts and len(artifacts) > 0:
+            parts = artifacts[0].get("parts", [])
+            if parts and len(parts) > 0:
+                text = parts[0].get("text", "")
+                if text:
+                    print("🤖 Agent Response:")
+                    print("-" * 50)
+                    print(text)
+                    print("-" * 50)
+                    return
+        
+        # Fallback: show the full JSON if we can't extract the text
+        print("🤖 Raw Response:")
+        import json
+        print(json.dumps(response_json, indent=2))
+        
+    except Exception as e:
+        print(f"❌ Error formatting response: {e}")
+        print("🤖 Raw Response:")
+        import json
+        print(json.dumps(response_json, indent=2))
+
+
 async def _amain(base_url: str, query: str) -> None:
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger(__name__)
@@ -100,7 +128,9 @@ async def _amain(base_url: str, query: str) -> None:
         result: ClientState = await app.ainvoke({"query": query})
         
         # NOTE: Only prints for CLI demo; in workflows, return result for downstream processing
-        print(result.get("response_json"))
+        _pretty_print_response(result.get("response_json", {}))
+        #replace this with a more useful print
+        #print(result.get("response_json"))
 
 
 def main() -> None:
