@@ -1,5 +1,7 @@
 """A minimal LangGraph client that uses the existing Agent Node via A2A.
 
+PURPOSE: LangGraph-compatible Simple Agent that makes A2A API calls (vs test_client.py's manual tester)
+
 Run against the main server (default http://localhost:10000):
 
   uv run python app/simple_agent_client.py --query "What can you do?"
@@ -25,7 +27,10 @@ from langgraph.graph import StateGraph
 
 
 class ClientState(TypedDict, total=False):
-    """State for the client LangGraph."""
+    """State for the client LangGraph.
+    
+    STRUCTURE: Defines graph state schema (vs test_client.py's procedural variables)
+    """
     query: str
     response_json: dict[str, Any]
 
@@ -42,9 +47,18 @@ async def _build_a2a_client(base_url: str) -> A2AClient:
 
 
 def _build_graph(client: A2AClient):
-    """Construct a minimal graph with a single node that calls the A2A server."""
+    """Construct a minimal graph with a single node that calls the A2A server.
+    
+    GRAPH INTEGRATION: ✅ Yes — creates a StateGraph (vs test_client.py's procedural flow)
+    REUSABILITY: ✅ High — returns compiled graph for use in workflows
+    """
 
     async def call_agent_node(state: ClientState) -> dict[str, Any]:
+        """Core node that makes the A2A API call.
+        
+        OUTPUT HANDLING: Returns structured state for downstream processing
+        (vs test_client.py's terminal printing)
+        """
         query = state.get("query", "").strip()
         if not query:
             raise ValueError("Query text is required")
@@ -81,11 +95,20 @@ async def _amain(base_url: str, query: str) -> None:
         client = A2AClient(httpx_client=httpx_client, agent_card=card)
         app = _build_graph(client)
 
+        # INVOCATION: Uses graph.ainvoke() for LangGraph integration
+        # (vs test_client.py's direct function calls)
         result: ClientState = await app.ainvoke({"query": query})
+        
+        # NOTE: Only prints for CLI demo; in workflows, return result for downstream processing
         print(result.get("response_json"))
 
 
 def main() -> None:
+    """CLI entry point for standalone testing.
+    
+    AGENT ROLE: Active participant — can be embedded in larger workflows
+    EVALUATION SUPPORT: 🟡 Possible — graph can be plugged into helpfulness loops
+    """
     parser = argparse.ArgumentParser(description="LangGraph Simple Agent Client (A2A)")
     parser.add_argument(
         "--base-url",
