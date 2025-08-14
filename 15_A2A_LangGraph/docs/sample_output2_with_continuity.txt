@@ -1,0 +1,45 @@
+🧠 You: what are 3 recent articles about AI?
+INFO:httpx:HTTP Request: POST http://localhost:10000/ "HTTP/1.1 200 OK"
+🤖 Agent Response:
+--------------------------------------------------
+Here are three recent articles about AI:
+
+1. "Artificial Intelligence News" on ScienceDaily (May 2025) - This source provides daily updates on AI developments, including breakthroughs and applications. [Link](https://www.sciencedaily.com/news/computers_math/artificial_intelligence/)
+
+2. "The 2025 AI Index Report" by Stanford HAI - This report discusses the rapid evolution of AI, its integration into daily life, and recent advancements such as FDA approvals of AI-enabled medical devices and autonomous vehicles. [Link](https://hai.stanford.edu/ai-index/2025-ai-index-report)
+
+3. "Artificial intelligence" news from MIT (August 2025) - Covers recent AI research including novel antibiotics design using AI, new algorithms for machine learning, and tools for visualizing complex objects. [Link](https://news.mit.edu/topic/artificial-intelligence2)
+
+If you want summaries or more articles, please let me know!
+--------------------------------------------------
+
+🧠 You: what is the weather in Boston today?
+INFO:httpx:HTTP Request: POST http://localhost:10000/ "HTTP/1.1 200 OK"
+🤖 Agent Response:
+--------------------------------------------------
+Today's weather in Boston is partly sunny and humid with a thunderstorm expected in the afternoon. The high temperature will be around 87°F, and there is a 60% chance of rain. Tonight, there will be scattered thunderstorms early in the evening, then partly cloudy skies with a low around 70°F.
+--------------------------------------------------
+
+🧠 You: what is the forecast for that city tonight?
+INFO:httpx:HTTP Request: POST http://localhost:10000/ "HTTP/1.1 200 OK"
+🤖 Agent Response (needs clarification):
+--------------------------------------------------
+Please specify the name of the city you want the weather forecast for tonight.
+--------------------------------------------------
+
+🧠 You: Boston
+INFO:httpx:HTTP Request: POST http://localhost:10000/ "HTTP/1.1 200 OK"
+🤖 Agent Response:
+--------------------------------------------------
+The weather forecast for Boston tonight is partly cloudy skies with a low around 67°F. There may be scattered thunderstorms earlier in the evening, but it will become partly cloudy and humid later at night. Winds will be from the NNE at 5 to 10 mph.
+--------------------------------------------------
+
+🧠 You: who would win a fight between a frog and a toaster?
+INFO:httpx:HTTP Request: POST http://localhost:10000/ "HTTP/1.1 200 OK"
+🤖 Agent Response:
+--------------------------------------------------
+In a hypothetical and humorous scenario, a frog would likely avoid a toaster, as the toaster is an inanimate object and not capable of fighting. If the toaster is plugged in and turned on, it could be dangerous to the frog due to heat and electrical components. So, in a 'fight,' the toaster would 'win' by being hazardous, but realistically, they wouldn't engage in a fight at all.
+--------------------------------------------------
+
+🧠 You: exit
+👋 Goodbye!
