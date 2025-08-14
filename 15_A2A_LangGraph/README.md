@@ -87,9 +87,24 @@ Do this by creating a Simple Agent that can make API calls to the 🤖Agent Node
 
 What are the core components of an `AgentCard`?
 
+#### ✅ Answer #1:
+
+An Agent Card is a standardized metadata file that should contain at least:
+-A unique ID for the agent
+-A human readable name and description
+-The services offered by the agent (the "what" it does)
+-The capabilities of the agent (the "how" it does it)
+-The endpoint URLs for tasks and messages
+
+
 ### ❓ Question #2:
 
 Why is A2A (and other such protocols) important in your own words?
+
+#### ✅ Answer #2:
+In **my** words (and then vetted by ChatGPT)
+A2A is important because it provides a standard way for agents on potentially disparate system using potentially different architectures to communicate. Agents can read each other's agent cards to learn what services and capabilities are available.  
+The A2A spec includes a discovery protocol, that allows agents to find each other either by knowing the base-url,  based on well-known endpoints (each agent hosts /.well-known/agent-card.json), or through initiatives like Project NANDA's decentralized registry.  With a registry, agents could locate each other dynamically (not unlike DNS for the web). This could be a building block toward an "agentic web", potentially the WWW of agents. 
 
 ### 🚧 Advanced Build:
 
