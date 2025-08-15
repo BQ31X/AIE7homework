@@ -1,0 +1,14 @@
+Length,Input Summary,First Call (s),Second Call (s),Identical,Speedup (x)
+Short,This is a second test sentence,1.2701,0.3354,True,3.79
+Short,This is a second test sentence,1.4933,0.5898,True,2.53
+Short,This is a second test sentence,0.3612,0.2087,True,1.73
+Short (new),This is a new test sentence,0.2616,1.3536,True,0.19
+Short (new),This is a new test sentence,0.2184,0.7805,True,0.28
+Short (new),This is a new test sentence,0.5805,0.2224,True,2.61
+Medium,First sentence of Gettysburg,0.3709,0.2035,True,1.82
+Medium,First sentence of Gettysburg,0.2009,0.1987,True,1.01
+Long,Full Gettysburg Address,0.2186,0.2718,True,0.8
+Long,Full Gettysburg Address,0.264,0.2759,False,0.96
+Long,Full Gettysburg Address,0.2807,0.1951,True,1.44
+Short (repeat),This is a second test sentence,0.2837,0.3639,True,0.78
+Short (repeat),This is a second test sentence,0.3948,0.1544,True,2.56

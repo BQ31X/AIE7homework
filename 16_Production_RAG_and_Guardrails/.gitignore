@@ -76,3 +76,5 @@ coverage.xml
 *.sqlite3
 .langgraph_api/
 langgraph_dev.log
+
+cache/*
