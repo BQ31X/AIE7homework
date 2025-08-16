@@ -22,6 +22,7 @@ class AgentState(TypedDict):
 
 from .rag import ProductionRAGChain
 from .guardrails import check_message, GuardrailResult
+from .agents import get_default_tools
 
 def guardrail_node(state: AgentState) -> Dict[str, Any]:
     """
@@ -103,6 +104,10 @@ def create_guarded_agent(
     Returns:
         A StateGraph configured with guardrails
     """
+    
+    # Use default tools with RAG chain if no tools provided
+    if tools is None:
+        tools = get_default_tools(rag_chain)
     # Create a closure to capture the model
     def call_model_with_model(state: AgentState) -> Dict[str, Any]:
         """Call model with the captured model instance."""
