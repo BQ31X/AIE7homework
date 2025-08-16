@@ -40,7 +40,12 @@ class GuardrailsManager:
         
         # Create individual guards using the installed validators
         self.topic_guard = Guard().use(RestrictToTopic(
-            valid_topics=["student loans", "financial aid", "education"]
+            valid_topics=[
+                "student loans", "financial aid", "education", "FAFSA",
+                "research", "academic", "science", "technology", 
+                "artificial intelligence", "AI", "machine learning", "ML",
+                "neural networks", "transformers", "AI safety", "computer science"
+            ]
         ))
         print("Topic guard initialized")
         
@@ -74,7 +79,7 @@ class GuardrailsManager:
                 print("Topic check failed")
                 return GuardrailResult(
                     passed=False,
-                    message="Please ask a question related to student financial aid."
+                    message="I cannot provide information on this topic."
                 )
             
             # Check for jailbreak attempts
@@ -166,6 +171,12 @@ def get_guardrails_manager() -> GuardrailsManager:
     if _guardrails_manager is None:
         _guardrails_manager = GuardrailsManager()
     return _guardrails_manager
+
+def reset_guardrails_manager():
+    """Reset the guardrails manager singleton to force re-initialization."""
+    global _guardrails_manager
+    _guardrails_manager = None
+    print("Guardrails manager reset - will reinitialize on next use")
 
 def check_message(
     message: BaseMessage,

@@ -4,7 +4,7 @@
 <output>
     <string name="response" format="free-text">
         <validators>
-            <guardrails/restricttotopic allowed-topics="student loans,financial aid,education" on-fail="reask" />
+            <guardrails/restricttotopic allowed-topics="student loans,financial aid,education, ai, research, technology, machine learning, neural networks, transformers, ai safety, computer science" on-fail="reask" />
             <guardrails/detect_jailbreak on-fail="fix" />
             <guardrails/profanity_free on-fail="fix" />
             <guardrails/guardrails_pii on-fail="fix" />
