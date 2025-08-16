@@ -51,22 +51,19 @@ def guardrail_node(state: AgentState) -> Dict[str, Any]:
     result = check_message(latest_message, context)
     
     if not result.passed:
-        # For failed pre-checks (user input), end the conversation with an error
-        if isinstance(latest_message, HumanMessage):
-            messages.append(AIMessage(content=result.message))
-            return {"messages": messages, "next": END}
+        # For both failed pre-checks (user input) and post-checks (agent output),
+        # end the conversation with an error message
+        error_message = result.message
+        if isinstance(latest_message, AIMessage):
+            # For failed post-checks, provide a more specific error
+            error_message = "I apologize, but I cannot provide a response that meets our guidelines. Please try rephrasing your question about student financial aid."
         
-        # For failed post-checks (agent output), mark for refinement
-        state["needs_refinement"] = result.refinement_needed
-        state["refinement_feedback"] = result.message
+        messages.append(AIMessage(content=error_message))
+        return {"messages": messages, "next": END}
     
     return state
 
-def should_refine(state: AgentState) -> str:
-    """Determine if the agent's response needs refinement."""
-    if state.get("needs_refinement", False):
-        return "refine"
-    return "end"
+
 
 def call_model(state: AgentState) -> Dict[str, Any]:
     """Invoke the model with the accumulated messages and append its response."""
@@ -76,6 +73,12 @@ def call_model(state: AgentState) -> Dict[str, Any]:
     messages = state["messages"]
     response = model.invoke(messages)
     return {"messages": messages + [response]}
+
+def should_continue_after_pre_guard(state: AgentState) -> str:
+    """Route after pre-guard: continue to agent or end if guardrail failed."""
+    if state.get("next") == END:
+        return "end"
+    return "agent"
 
 def should_use_tools(state: AgentState) -> str:
     """Route to 'action' if the last message includes tool calls; else continue."""
@@ -117,7 +120,14 @@ def create_guarded_agent(
     graph.add_node("post_guard", guardrail_node)
     
     # Add edges with conditional routing
-    graph.add_edge("pre_guard", "agent")
+    graph.add_conditional_edges(
+        "pre_guard",
+        should_continue_after_pre_guard,
+        {
+            "agent": "agent",
+            "end": END
+        }
+    )
     graph.add_conditional_edges(
         "agent",
         should_use_tools,
@@ -128,15 +138,8 @@ def create_guarded_agent(
     )
     graph.add_edge("action", "agent")
     
-    # Add conditional edges for post-guard
-    graph.add_conditional_edges(
-        "post_guard",
-        should_refine,
-        {
-            "refine": "agent",  # Loop back for refinement
-            "end": END  # End conversation
-        }
-    )
+    # Add simple edge for post-guard - always end after post-check
+    graph.add_edge("post_guard", END)
     
     # Set entry point
     graph.set_entry_point("pre_guard")
